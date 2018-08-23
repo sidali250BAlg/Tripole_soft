@@ -1,0 +1,142 @@
+body{
+	font-family: lucida sans;
+	height: 1200px
+}
+.sections{
+	padding: 20px 0
+}
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.sticky{
+	background-color: #000;
+	color: #fff;
+}
+header{
+	height: auto;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999
+}
+header .icon{
+	position: absolute;
+	top:32px;
+	right: 13px;
+	z-index: 10;
+	display: none;
+	color: #fff
+}
+header .logo{
+	font-family: 'Merriweather', serif;
+	color: #fff
+}
+header nav .nav-list{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 0;
+	z-index: 1000
+}	
+header nav .nav-list .list a{
+	display: block;
+	text-decoration: none;
+	padding: 15px 0;
+	margin: 9px 0;
+	transition: all 0.3s ease-in-out;
+	color: #fff
+}
+header nav .nav-list .list a:hover{
+	color: #7cb62f
+}
+
+@media (max-width:575px){
+	header nav .nav-list{
+		display: none;
+		text-align: center;
+		padding: 0
+	}
+	header .logo{
+		text-align: left;
+
+	}
+	header .icon{
+		display: block
+	}
+}
+
+.home{
+	height: 650px;
+	background-image: url('../images/img_header.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.home .home-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+.home .home-title{
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 30px
+}
+.home .home-desc{
+	color: #fff;
+	font-size: 15px;
+	font-family: 'Merriweather', serif;
+}
+.home .button{
+	background-color: #7cb62f;
+	padding: 10px 0;
+	width: 150px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Metamorphous', cursive;
+	margin-top: 30px;
+	margin-right: 25px
+}
+
+@media (max-width:575px){
+	header{
+		background-color: #000
+	}
+	.home .home-title{
+		font-size: 30px
+	}
+	.home .home-desc{
+		font-size: 12px
+	}
+}
+.section-title{
+	font-size: 40px;
+}
+.line{
+	width: 300px;
+	background: #ddd;
+	height: 3px;
+	margin: auto;
+}
+.line span{
+	display: block;
+	height: 4px;
+	width: 200px;
+	background-color: #7cb62f;
+	margin: auto;
+	position: relative;
+	bottom: 0.5px
+}
+.section-header p{
+	width: 700px;
+	color: #888;
+	margin: 40px auto;
+	line-height: 1.5;
+	font-size: 17px
+}
