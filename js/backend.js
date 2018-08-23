@@ -55,4 +55,13 @@ $(document).ready(function(){
 			scrollTop: 0
 		}, 1000);
 	});
+
+	//popup btn-commencer
+	$('.btn-commencer').click(function(){
+		$('.popup1').fadeIn(1000);
+	});
+
+	$('.close-popup').click(function(){
+		$('.popup1').fadeOut(1000);
+	});
 });
