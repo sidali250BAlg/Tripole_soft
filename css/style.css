@@ -5,6 +5,11 @@ body{
 .sections{
 	padding: 20px 0
 }
+.sections2{
+	height: 600px;
+	padding: 20px 0;
+	border-bottom: 1px solid #888
+}
 .overlay{
 	position: absolute;
 	top: 0;
@@ -35,6 +40,12 @@ header .icon{
 header .logo{
 	font-family: 'Merriweather', serif;
 	color: #fff
+}
+header .logo h2{
+	transition: all 0.5s ease-in-out;
+}
+header .logo h2:hover{
+	color: blue
 }
 header nav .nav-list{
 	list-style: none;

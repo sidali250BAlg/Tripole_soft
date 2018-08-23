@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+	'use strict';
+
 	$('.icon').click(function(){
 		$('.nav-list').slideToggle()
 	});
@@ -11,4 +14,6 @@ $(document).ready(function(){
 			$('header').removeClass('sticky');
 		}
 	});
+
+
 });
