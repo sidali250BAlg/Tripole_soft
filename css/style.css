@@ -62,6 +62,9 @@ header nav .nav-list .list a{
 	transition: all 0.3s ease-in-out;
 	color: #fff
 }
+header nav .nav-list .list a.active{
+	color: #7cb62f
+}
 header nav .nav-list .list a:hover{
 	color: #7cb62f
 }

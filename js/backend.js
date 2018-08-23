@@ -21,4 +21,9 @@ $(document).ready(function(){
 			scrollTop: $('#' + $(this).data('scroll')).offset().top -70
 		},1000);
 	});
+
+	//ajout de la class active au liste li du navbar
+	$('nav .nav-list .list a').click(function(){
+		$(this).addClass('active').parent().siblings().find('a').removeClass('active');
+	});
 });
