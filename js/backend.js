@@ -15,5 +15,10 @@ $(document).ready(function(){
 		}
 	});
 
-
+	$('nav .nav-list .list a').click(function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: $('#' + $(this).data('scroll')).offset().top -70
+		},1000);
+	});
 });
