@@ -208,6 +208,20 @@ header nav .nav-list .list a:hover{
     position: fixed;
     border: solid 1px #ccc;
 }
+@media (max-width:575px){
+	.popup .inner{
+	padding: 20px;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 9px 3px #635e5e;
+    top: 50%;
+    margin-top: -250px;
+    left: 50%;
+    margin-left: -175px;
+    position: fixed;
+    border: solid 1px #ccc;		
+	}
 .popup .inner .close-popup{
 	position: absolute;
 	right: 33px;
