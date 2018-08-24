@@ -70,4 +70,15 @@ $(document).ready(function(){
 			$('.popup').fadeOut();
 		}
 	});
+
+	//button with span effects
+	$('.button').hover(function(){
+		$(this).find('span').eq(0).animate({
+			width: '100%'
+		},200)
+	},function(){
+		$(this).find('span').eq(0).animate({
+			width: 0
+		},200)
+	});
 });

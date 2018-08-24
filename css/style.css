@@ -126,8 +126,27 @@ header nav .nav-list .list a:hover{
 	color: #fff;
 	font-family: 'Metamorphous', cursive;
 	margin-top: 30px;
-	margin-right: 25px
+	margin-right: 25px;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	overflow: hidden
 }
+.home .button span:first-child{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	display: block;
+	background-color: #31ef40;
+	z-index: 1
+}
+.home .button span:last-child{
+	position: relative;
+	z-index: 2
+}
+
 
 @media (max-width:575px){
 	header{
