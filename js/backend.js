@@ -64,4 +64,10 @@ $(document).ready(function(){
 	$('.close-popup').click(function(){
 		$('.popup1').fadeOut(1000);
 	});
+
+	$(document).keydown(function(e){
+		if(e.keyCode == 27){
+			$('.popup').fadeOut();
+		}
+	});
 });
