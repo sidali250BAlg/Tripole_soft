@@ -81,4 +81,21 @@ $(document).ready(function(){
 			width: 0
 		},200)
 	});
+
+	//rendre fixed-menu animate
+	$('.fixed-menu .fa-angle-double-right').on('click',function(){
+		//var windthFixedMenu = $('')
+		$(this).parent('.fixed-menu').toggleClass('is-visible');
+
+		if($(this).parent('.fixed-menu').hasClass('is-visible'))
+		{
+			$(this).parent('.fixed-menu').animate({
+				left: 0
+			},500);
+					}else{
+			$(this).parent('.fixed-menu').animate({
+				left: '-240px'
+			},500);
+		}
+	})
 });

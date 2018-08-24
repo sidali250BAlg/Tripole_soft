@@ -119,7 +119,7 @@ header nav .nav-list .list a:hover{
 	font-family: 'Merriweather', serif;
 }
 .home .button{
-	background-color: #7cb62f;
+	background-color: #2980b9;
 	padding: 10px 0;
 	width: 150px;
 	text-align: center;
@@ -139,7 +139,7 @@ header nav .nav-list .list a:hover{
 	width: 0;
 	height: 100%;
 	display: block;
-	background-color: #31ef40;
+	background-color: #3498db;
 	z-index: 1
 }
 .home .button span:last-child{
@@ -214,4 +214,32 @@ header nav .nav-list .list a:hover{
     bottom: 33px;
     width: 100px;
     cursor: pointer;
+}
+.fixed-menu{
+	position:fixed;
+	top: 0;
+	left: -240px;
+	z-index: 1999;
+	background-color: #fff;
+	color: #888;
+	padding:20px;
+	height: 100%;
+	width: 240px;
+}
+.fixed-menu dt{
+	font-size: 18px;
+	padding-bottom: 10px
+}
+.fixed-menu dd{
+	height: 26px;
+	padding-left:15px;
+	width: 210px; 
+}
+.fixed-menu .fa-angle-double-right{
+	position: absolute;
+	right: -37px;
+	background-color: #fff;
+	border-radius: 0 10px 10px 0;
+	top: 150px;
+	cursor: pointer;
 }
