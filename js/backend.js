@@ -97,5 +97,5 @@ $(document).ready(function(){
 				left: '-240px'
 			},500);
 		}
-	})
+	});
 });

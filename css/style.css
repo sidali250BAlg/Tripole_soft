@@ -222,6 +222,7 @@ header nav .nav-list .list a:hover{
     position: fixed;
     border: solid 1px #ccc;		
 	}
+}
 .popup .inner .close-popup{
 	position: absolute;
 	right: 33px;
