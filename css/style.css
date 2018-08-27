@@ -1,3 +1,10 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 body{
 	font-family: lucida sans;
 	height: 1200px
@@ -257,4 +264,40 @@ header nav .nav-list .list a:hover{
 	border-radius: 0 10px 10px 0;
 	top: 150px;
 	cursor: pointer;
+}
+
+/* page tripole games  / Gallery */
+.gallery{
+	width: 100%;
+	margin: auto;
+	padding: 3px;
+	background-color: #fff;
+}
+.gallery img{
+	max-width: 100%
+}
+.gallery .master-img{
+	
+}
+.gallery .thumbnails{
+	overflow: hidden
+}
+.gallery .thumbnails img{
+	width: 19.6%;
+	float: left;
+	border: 2px solid #BBB;
+	cursor: pointer;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	opacity: .7;
+}
+.gallery .thumbnails img:not(:last-child){
+	margin-right: .5%
+}
+.gallery .thumbnails img.selected{
+	border: 2px solid green;
+	box-shadow: 6px 7px 16px 0px #0e8000;
+	opacity: 1
 }

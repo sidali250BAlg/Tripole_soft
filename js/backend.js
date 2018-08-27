@@ -41,7 +41,7 @@ $(document).ready(function(){
 		});
 
 		//sychronize scroll with button scroll-to-top
-		if($(window).scrollTop() >= 1000){
+		if($(window).scrollTop() >= 700){
 			$('.scroll-to-top').fadeIn(400);
 		}else{
 			$('.scroll-to-top').fadeOut(400);
@@ -97,5 +97,12 @@ $(document).ready(function(){
 				left: '-240px'
 			},500);
 		}
+	});
+
+	// thumbnails gallery
+	$('.thumbnails img').on('click',function(){
+		$(this).addClass('selected').siblings().removeClass('selected');
+
+		$('.master-img img').attr('src',$(this).attr('src'));
 	});
 });
